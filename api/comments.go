@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 func (h *Handler) handleGetComments(w http.ResponseWriter, r *http.Request) {

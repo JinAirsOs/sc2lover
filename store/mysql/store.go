@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-sql-driver/mysql"
 
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 // Store is a mysql implementation of store.

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 // printAdmins prints all the administrator users.

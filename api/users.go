@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/disintegration/bebop/avatar"
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/avatar"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 const avatarUploadMaxBytes = 5 * 1024 * 1024

@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 // UserStore is a mock implementation of store.UserStore.

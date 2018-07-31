@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 func TestTopic(t *testing.T) {

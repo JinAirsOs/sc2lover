@@ -10,12 +10,12 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 
-	"github.com/disintegration/bebop/api"
-	"github.com/disintegration/bebop/avatar"
-	"github.com/disintegration/bebop/config"
-	"github.com/disintegration/bebop/jwt"
-	"github.com/disintegration/bebop/oauth"
-	"github.com/disintegration/bebop/static"
+	"github.com/JinAirsOs/sc2lover/api"
+	"github.com/JinAirsOs/sc2lover/avatar"
+	"github.com/JinAirsOs/sc2lover/config"
+	"github.com/JinAirsOs/sc2lover/jwt"
+	"github.com/JinAirsOs/sc2lover/oauth"
+	"github.com/JinAirsOs/sc2lover/static"
 )
 
 // startServer configures and starts the bebop web server.

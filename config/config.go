@@ -147,7 +147,7 @@ func GenKeyHex(byteLen int) string {
 var tpl = template.Must(template.New("initial-config").Parse(strings.TrimSpace(`
 address  = "127.0.0.1:8080"
 base_url = "https://example.com/forum"
-title    = "bebop"
+title    = "sc2lover"
 
 jwt {
   secret = "{{.jwt_secret}}"

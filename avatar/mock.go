@@ -1,7 +1,7 @@
 package avatar
 
 import (
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 // MockService is a mock implementation of avatar.Service

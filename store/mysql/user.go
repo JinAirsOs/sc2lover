@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/disintegration/bebop/store"
+	"github.com/JinAirsOs/sc2lover/store"
 )
 
 type userStore struct {
