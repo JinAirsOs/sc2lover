@@ -123,6 +123,14 @@ func initOAuthProviders(cfg *config.Config, h *oauth.Handler) ([]string, error) 
 		providers = append(providers, "github")
 	}
 
+	if cfg.OAuth.BattleNet.ClientID != "" && cfg.OAuth.BattleNet.Secret != "" {
+		err := h.AddProvider("battlenet", cfg.OAuth.BattleNet.ClientID, cfg.OAuth.BattleNet.Secret)
+		if err != nil {
+			return nil, fmt.Errorf("failed to init BattleNet oauth provider: %s", err)
+		}
+		providers = append(providers, "battlenet")
+	}
+
 	return providers, nil
 }
 

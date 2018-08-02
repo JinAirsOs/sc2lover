@@ -81,6 +81,11 @@ type Config struct {
 			ClientID string `hcl:"client_id" envconfig:"BEBOP_OAUTH_GITHUB_CLIENT_ID"`
 			Secret   string `hcl:"secret" envconfig:"BEBOP_OAUTH_GITHUB_SECRET"`
 		} `hcl:"github"`
+
+		BattleNet struct {
+			ClientID string `hcl:"client_id" envconfig:"BEBOP_OAUTH_BATTLENET_CLIENT_ID"`
+			Secret   string `hcl:"secret" envconfig:"BEBOP_OAUTH_BATTLENET_SECRET"`
+		} `hcl:"battlenet"`
 	} `hcl:"oauth"`
 }
 
@@ -204,6 +209,11 @@ oauth {
   }
 
   github {
+    client_id = ""
+    secret    = ""
+  }
+
+  battlenet {
     client_id = ""
     secret    = ""
   }

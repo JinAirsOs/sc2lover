@@ -21,10 +21,10 @@ var BebopTopics = Vue.component("bebop-topics", {
 
         <div class="topics-topic-top-buttons">
           <router-link v-if="auth.authenticated" to="/new-topic" class="btn btn-primary btn-sm">
-            <i class="fa fa-plus"></i> New Topic
+            <i class="fa fa-plus"></i> 发帖
           </router-link>
           <a class="btn btn-primary btn-sm" role="button" @click="load">
-            <i class="fa fa-refresh"></i> Refresh
+            <i class="fa fa-refresh"></i> 刷新
           </a>
         </div>
 

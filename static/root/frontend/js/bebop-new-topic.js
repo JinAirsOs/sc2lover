@@ -1,7 +1,7 @@
 var BebopNewTopic = Vue.component("bebop-new-topic", {
   template: `
     <div class="container content-container">
-      <h2>New Topic</h2>
+      <h2>发帖</h2>
       <div>
         <div class="form-group">
           <label for="user-name" class="form-control-label">Title:</label>
