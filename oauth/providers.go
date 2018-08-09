@@ -38,7 +38,7 @@ var providerConfigs = map[string]providerConfig{
 	},
 	"facebook": {
 		endpoint: facebook.Endpoint,
-		scopes:   []string{"public_profile"},
+		scopes:   []string{"public_profile","email"},
 		getUser:  getFacebookUser,
 	},
 	"github": {

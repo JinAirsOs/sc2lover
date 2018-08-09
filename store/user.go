@@ -2,7 +2,7 @@ package store
 
 import (
 	"time"
-	"unicode/utf8"
+	//"unicode/utf8"
 )
 
 // User represents an authenticated user.
@@ -42,15 +42,20 @@ func validUserNameRune(r rune) bool {
 
 // ValidUserName checks if given user name is valid.
 func ValidUserName(userName string) bool {
-	length := utf8.RuneCountInString(userName)
+	/*length := utf8.RuneCountInString(userName)
 	if !(userNameMinLen <= length && length <= userNameMaxLen) {
 		return false
-	}
-
+	}*/
+	var length int = 0
 	for _, r := range userName {
+		length++
 		if !validUserNameRune(r) {
 			return false
 		}
+	}
+
+	if !(userNameMinLen <= length && length <= userNameMaxLen) {
+		return false
 	}
 
 	return true

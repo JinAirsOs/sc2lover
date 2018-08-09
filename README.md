@@ -1,6 +1,6 @@
-# Bebop
+# sc2lover
 
-Bebop is a simple discussion board / forum web application.
+sc2lover is a simple discussion board / forum web application.
 
 ## Features
 
@@ -26,29 +26,29 @@ Bebop is a simple discussion board / forum web application.
 
   * Create a new empty database (MySQL оr PostgreSQL) that will be used as a data store and a database user with all privileges granted on this database.
 
-  * Obtain OAuth 2.0 credentials (client_id and secret) from at least one of the providers (Google, Facebook, Github) so users can log into the web application. The OAuth callback url will be `<base_url>/oauth/end/<provider>`. The `<base_url>` is where the bebop web app will be mounted on your site and the `<provider>` is the lowercase provider name. For example, if base_url is `https://my.website.com/forum/`, then the oauth callback url for google will be `https://my.website.com/forum/oauth/end/google`.
+  * Obtain OAuth 2.0 credentials (client_id and secret) from at least one of the providers (Google, Facebook, Github) so users can log into the web application. The OAuth callback url will be `<base_url>/oauth/end/<provider>`. The `<base_url>` is where the sc2lover web app will be mounted on your site and the `<provider>` is the lowercase provider name. For example, if base_url is `https://my.website.com/forum/`, then the oauth callback url for google will be `https://my.website.com/forum/oauth/end/google`.
 
-  * Download and compile the bebop binary:
+  * Download and compile the sc2lover binary:
     ```
-    $ go get -u github.com/disintegration/bebop/cmd/bebop
+    $ go get -u github.com/JinAirsOs/sc2lover/cmd/sc2lover
     ```
 
   * Inside an empty directory run:
     ```
-    $ bebop init
+    $ sc2lover init
     ```
-    This will generate an initial configuration file "bebop.conf" inside the current dir.
+    This will generate an initial configuration file "sc2lover.conf" inside the current dir.
     Edit the configuration file to set the server listen address, the base url, the database and file storage parameters, OAuth credentials, etc.
 
-  * Run the following command to start the bebop web server.
+  * Run the following command to start the sc2lover web server.
     ```
-    $ bebop start
+    $ sc2lover start
     ```
 
   * Sign in into your web application using one of the social login providers.
     Then run the following command to grant admin privileges to your user.
     ```
-    $ bebop add-admin <your-username>
+    $ sc2lover add-admin <your-username>
     ```
 
 ## Screenshots

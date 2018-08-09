@@ -12,7 +12,7 @@ import (
 	"github.com/JinAirsOs/sc2lover/store/postgresql"
 )
 
-const configFile = "bebop.conf"
+const configFile = "sc2lover.conf"
 
 // initConfig creates an initial configuration file inside the current directory.
 func initConfig() {

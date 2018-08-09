@@ -179,7 +179,7 @@ file_storage {
 }
 
 store {
-  type = "postgresql"
+  type = "mysql"
 
   postgresql {
     address  = "127.0.0.1:5432"
