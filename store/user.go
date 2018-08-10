@@ -25,6 +25,10 @@ const (
 
 // validUserNameRune checks if given user name rune is valid.
 func validUserNameRune(r rune) bool {
+	//chinese word
+	if '\u4e00' <= r && r < '\u9fa5'+44 {
+		return true
+	}
 	if 'a' <= r && r <= 'z' {
 		return true
 	}
