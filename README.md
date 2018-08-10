@@ -2,6 +2,8 @@
 
 sc2lover is a simple discussion board / forum web application.
 
+https://forum.sc2lover.com
+
 ## Features
 
 - REST API backend written in Go
@@ -17,6 +19,7 @@ sc2lover is a simple discussion board / forum web application.
   - Google
   - Facebook
   - Github
+  - BattleNet (CN)
 - JSON Web Tokens (JWT) are used for user authentication in the API
 - Single binary deploy. All the static assets (frontend JavaScript & CSS files) are embedded into the binary
 - Markdown comments
