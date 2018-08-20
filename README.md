@@ -54,12 +54,10 @@ https://forum.sc2lover.com
     $ sc2lover add-admin <your-username>
     ```
 
-## Screenshots
+## Notes
 
-### Topics
-
-![Topics](screenshot-topics.png)
-
-### Comments
-
-![Comments](screenshot-comments.png)
+### front-end develop 
+do not forgot
+```
+go generate ./static
+```
