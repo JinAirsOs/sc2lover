@@ -4,15 +4,14 @@ var BebopUsernameModal = Vue.component("bebop-username-modal", {
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title">Username</h2>
+            <h2 class="modal-title">用户名</h2>
           </div>
           <div class="modal-body">
             <div style="margin-bottom: 15px;">
-              Please choose a username that is between 3 and 20 characters in length and containing only 
-              alphanumeric characters (letters A-Z, numbers 0-9), hyphens, and underscores.
+              请输入你要使用的用户名，长度３到２０之间，支持alpha字符，中文字符，下划线，数字0-9，连字符.
             </div>
             <div class="form-group">
-              <label for="user-name" class="form-control-label">Username:</label>
+              <label for="user-name" class="form-control-label">用户名:</label>
               <input type="text" class="form-control" id="username-modal-input" v-model="name" @change="hideErrorMessage" @keyup="hideErrorMessage" @keyup.13="send">
             </div>
             <div id="username-modal-error" class="alert alert-danger" :class="{hidden: errorMessage===''}" role="alert" style="cursor:pointer" @click="hideErrorMessage">
@@ -20,8 +19,8 @@ var BebopUsernameModal = Vue.component("bebop-username-modal", {
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary" id="username-modal-ok" @click="send">OK</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="username-modal-ok" @click="send">确认</button>
           </div>
         </div>
       </div>
